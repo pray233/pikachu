@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <style id="demo2"></style>
+    <div id="buttons">
+        <button id="btnPause">暂停</button>
+        <button id="btnPlay">播放</button>
+        <button id="btnSlow">慢速</button>
+        <button id="btnNormal">中速</button>
+        <button id="btnFast">快速</button>
+    </div>
+    <style>* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        #buttons {
+            position: fixed;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            right: 0;
+            top: 0;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        #buttons>button {
+            margin-bottom: 5px;
+            padding: 4px 6px;
+        }
+
+        #demo2 {
+            display: none;
+        }
+
+        #demo {
+            position: fixed;
+            height: 50vh;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow-y: auto;
+        }
+
+        #demo::-webkit-scrollbar {
+            display: none;
+        }
+
+        #html {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50vh;
+        }</style>
+    <div id="html">
+        <div class="skin">
+            <div class="eye eyeLeft"></div>
+            <div class="eye eyeRight"></div>
+            <div class="nose">
+                <div class="noseArc"></div>
+            </div>
+            <div class="face left">
+            </div>
+            <div class="face right">
+            </div>
+            <div class="mouth">
+                <div class="top">
+                    <div class="lip left"></div>
+                    <div class="lip right"></div>
+                </div>
+                <div class="bottom">
+                    <div class="circle1">
+                        <div class="circle2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/test.e98b79dd.js"></script>
+</body>
+
+</html>
